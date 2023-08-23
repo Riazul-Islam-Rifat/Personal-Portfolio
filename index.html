@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <title> Personal Portfolio </title>
+    <!--Link the css file with html-->
+    <link rel="stylesheet" href="style.css">
+    <!-- For using Font Awesome-->
+    <script src="https://kit.fontawesome.com/8f3aff935a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <!-- Creating the navigation bar, logo and menu -->
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">PORTFOLIO</a></li>
+                    <li><a href="#portfolio">BLOGS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!--Add some header text-->
+            <div class="header-text">
+                <div class="header-top">
+                    <p>Software Engineer <i class="fa-solid fa-computer"></i></p>
+                    <h1>Hey I'm <span>Your name</span> <br> from Dhaka-Bangladesh.</h1>
+                    <a href="images/cv.pdf" download class="download-btn">Download CV</a>
+                </div>
+                <div class="header-icons">
+                    <i class="fa-brands fa-python tech"></i>
+                    <i class="fa-brands fa-html5 tech"></i>
+                    <i class="fa-brands fa-css3 tech"></i>
+                    <i class="fa-solid fa-database tech"></i>
+                    <i class="fa-brands fa-github tech"></i>
+                    <i class="fa-brands fa-linux tech"></i>
+                    <i class="fa-solid fa-laptop-file tech1"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of Header Section -->
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"></h1>
+                    <p class="details">Add your details
+                    </p>
+                    <!-- Creating tab -->
+                    <div class="tab-titles">
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('research')">Research</p>
+                    </div>
+                    <div class="tab-contents " id="skills"> <!-- Here id will be same as the onclick's name-->
+                        <ul>
+                            <li><span>Programming languages</span><br>-- Python, JavaScript, SQL</li>
+                            <li><span>Frameworks</span><br>-- FastAPI, Django/DRF, Rasa</li>
+                            <li><span>Database</span><br>-- PostgreSQL, MySQL</li>
+                            <li><span>Frontend Technologies</span><br>-- HTML, CSS, JavaScript, React</li>
+                            <li><span>Other Technical Skills</span><br>-- Odoo, RestAPI, Strawberry(GraphQL), Linux, Project Management</li>
+                            <li><span>Technical Familiarities </span><br>-- NoSQL, MongoDB, Docker</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span> Software Engineer  [Dec 2022 - June 2023]</span><br> -- Technologies I have used : FastAPI, Odoo, Rasa, PostgreSQL</li>
+                            <li><span>Software Engineer  [June 2022 - Dec 2022]</span><br> -- Technologies I have used : Python, FastAPI, PostgreSQL, SqlAlchemy, Docker, Strawberry(GraphQL)</li>
+                            <li><span>Teaching Assistant [Feb 2021 - June 2022]</span><br> -- I was responsible to teach students and assist faculties in different coursees like Programming Language, Computer Architecture etc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor degree in Computer Science and Engineering</span><br> -- CGPA- 3.83 out of 4</li>
+                            <li><span>Higher Secondary Certificate</span><br>-- GPA- 4.75 out of 5</li>
+                            <li><span>Secondary School Certificate </span><br>-- GPA- 5.00 out of 5</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="research">
+                        <ul>
+                            <li><span><a href="#">
+                                ML/AI </a></span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i><br>
+                            -- I was interested in ML/AI and came up with an idea that is helpful for the blind people.
+                        If are interested to know more please read the thesis paper from the link.</li>
+                            <li><span> Research Interest</span><br> Add your interest
+                            <i class="fa-regular fa-face-smile"></i></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of about section -->
+    <!--  Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> Projects </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h1>Calculator</h1>
+                    <p> An android calculator<br><span>Flutter|Dart|Deploy</span></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h1>Online Health Care</h1>
+                    <p> This is an online health care management system<br><span>Django|HTML|CSS|SQL</span></p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-braille"></i>
+                    <h1>Voice</h1>
+                    <p> This is a deep learning project. <br><span>Deep Learning|VGG16|Dataset</span></p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <a href="#" class="project-seemore">See More</a>
+        </div>
+    </div>
+    <!-- End of services section -->
+    <!-- This connects the js file -->
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/back2.png">
+                    <div class="layer">
+                        <h1> Blog Title </h1>
+                        <p>Imminent</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/back2.png">
+                    <div class="layer">
+                        <h1> Blog Title </h1>
+                        <p>Imminent</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/back2.png">
+                    <div class="layer">
+                        <h1> Blog Title </h1>
+                        <p>Imminent</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="blog-seemore">See more</a>
+        </div>
+    </div>
+    <!--End Of Portfolio section-->
+    <!--Contact section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i> r@gmail.com </p> 
+                    <p><i class="fa-solid fa-phone"></i> +88019XXXX</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <p class="code">Find me in Leetcode and AlgoExpert:<br><br>
+                        <a href="#" class="leetcode">LeetCode</a>
+                        <a href="#" class="algoexpert">AlgoExpert</a>
+                    </p>
+        
+                    <a href="images/cv.pdf" download class="download-btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © RIAZUL ISLAM RIFAT</p>
+        </div>
+    </div>
+    <!--End of contact section-->
+    <script src="scripts.js"></script>
+</body>
+</html>
